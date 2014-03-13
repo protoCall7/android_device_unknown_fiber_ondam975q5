@@ -22,7 +22,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/recovery/keyboard.ko:recovery/root/keyboard.ko \
 	$(LOCAL_PATH)/recovery/disp.ko:recovery/root/disp.ko \
 	$(LOCAL_PATH)/recovery/lcd.ko:recovery/root/lcd.ko \
-	$(LOCAL_PATH)/recovery/hdmi.ko:recovery/root/hdmi.ko
+	$(LOCAL_PATH)/recovery/hdmi.ko:recovery/root/hdmi.ko \
+	$(LOCAL_PATH)/recovery/fstab.sun6i:recovery/root/fstab.sun6i \
+	$(LOCAL_PATH)/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
+	$(LOCAL_PATH)/recovery/ueventd.sun6i.rc:recovery/root/ueventd.sun6i.rc \
 
 $(call inherit-product, build/target/product/full.mk)
 
