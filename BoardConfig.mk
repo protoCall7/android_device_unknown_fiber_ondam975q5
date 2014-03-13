@@ -12,7 +12,6 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CPU_VARIANT := cortex-a7
 
-TARGET_RECOVERY_PRE_COMMAND := "setrecovery"
 TARGET_RECOVERY_INITRC := device/unknown/fiber_ondam975q5/recovery/init.rc
 
 TARGET_BOOTLOADER_BOARD_NAME := fiber_ondam975q5
