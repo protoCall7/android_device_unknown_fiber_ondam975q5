@@ -12,9 +12,6 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CPU_VARIANT := cortex-a7
 
-#RECOVERY_FSTAB_VERSION := 1
-#TARGET_USERIMAGES_USE_EXT4 := true
-
 TARGET_RECOVERY_PRE_COMMAND := "setrecovery"
 TARGET_RECOVERY_INITRC := device/unknown/fiber_ondam975q5/recovery/init.rc
 

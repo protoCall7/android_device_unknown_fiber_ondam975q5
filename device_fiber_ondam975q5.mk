@@ -14,9 +14,15 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/init.rc:recovery/root/init.rc
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/init.recovery.sun6i.rc:root/init.recovery.sun6i.rc
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel \
+	$(LOCAL_PATH)/recovery/init.rc:recovery/root/init.rc \
+	$(LOCAL_PATH)/recovery/init.recovery.sun6i.rc:root/init.recovery.sun6i.rc \
+	$(LOCAL_PATH)/recovery/nand.ko:recovery/root/nand.ko \
+	$(LOCAL_PATH)/recovery/keyboard.ko:recovery/root/keyboard.ko \
+	$(LOCAL_PATH)/recovery/disp.ko:recovery/root/disp.ko \
+	$(LOCAL_PATH)/recovery/lcd.ko:recovery/root/lcd.ko \
+	$(LOCAL_PATH)/recovery/hdmi.ko:recovery/root/hdmi.ko
 
 $(call inherit-product, build/target/product/full.mk)
 
