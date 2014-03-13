@@ -15,10 +15,8 @@ TARGET_CPU_VARIANT := cortex-a7
 #RECOVERY_FSTAB_VERSION := 1
 #TARGET_USERIMAGES_USE_EXT4 := true
 
-TARGET_RECOVERY_INITRC := device/unknown/fiber_ondam975q5/recovery/init.recovery.sun6i.rc
-TARGET_RECOVERY_KERNEL := device/unknown/fiber_ondam975q5/recovery/kernel
-
 TARGET_RECOVERY_PRE_COMMAND := "setrecovery"
+TARGET_RECOVERY_INITRC := device/unknown/fiber_ondam975q5/recovery/init.rc
 
 TARGET_BOOTLOADER_BOARD_NAME := fiber_ondam975q5
 

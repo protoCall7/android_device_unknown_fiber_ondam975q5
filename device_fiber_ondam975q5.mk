@@ -14,8 +14,9 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/init.rc:recovery/root/init.rc
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/init.recovery.sun6i.rc:root/init.recovery.sun6i.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
