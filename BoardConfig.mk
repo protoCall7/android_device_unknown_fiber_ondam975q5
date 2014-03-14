@@ -14,6 +14,8 @@ TARGET_CPU_VARIANT := cortex-a7
 
 TARGET_RECOVERY_INITRC := device/unknown/fiber_ondam975q5/recovery/init.rc
 
+TARGET_RECOVERY_PRE_COMMAND := "setrecovery"
+
 TARGET_BOOTLOADER_BOARD_NAME := fiber_ondam975q5
 
 BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=4 vmalloc=384M ion_reserve=128M
@@ -31,3 +33,4 @@ BOARD_FLASH_BLOCK_SIZE := 1024
 TARGET_PREBUILT_KERNEL := device/unknown/fiber_ondam975q5/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_RECOVERY_SWIPE := true

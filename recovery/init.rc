@@ -3,6 +3,7 @@ import /init.recovery.${ro.hardware}.rc
 on early-init
     start ueventd
     start healthd
+    start vold
 
 on init
     export PATH /sbin:/system/bin
@@ -42,6 +43,11 @@ on boot
 
 on property:sys.powerctl=*
    powerctl ${sys.powerctl}
+
+service vold /sbin/minivold
+    class core
+    socket vold stream 0660 root mount
+    ioprio be 2
 
 service ueventd /sbin/ueventd
     critical
